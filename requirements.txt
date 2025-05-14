@@ -1,6 +1,4 @@
-import pandas as pd
-import streamlit as st
-from io import BytesIO
-import matplotlib.pyplot as plt
-from openpyxl.drawing.image import Image as OpenpyxlImage
-from openpyxl.utils.dataframe import dataframe_to_rows
+pandas>=2.0.0
+streamlit>=1.20.0
+matplotlib>=3.7.0
+openpyxl>=3.1.0
