@@ -6,7 +6,7 @@ from openpyxl.drawing.image import Image as OpenpyxlImage
 from openpyxl.utils.dataframe import dataframe_to_rows
 
 # Заголовок приложения
-st.title("📊 Обработка ОБЩИХ финансовых отчётов Wildberries (Разбивка по Датам)")
+st.title("📊 Обработка ОБЩИХ финансовых отчётов Wildberries (Разбивка по Датам. С графиком.)")
 
 # Выбор режима
 mode = st.radio(
