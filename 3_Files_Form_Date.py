@@ -14,10 +14,10 @@ mode = st.radio(
 )
 
 # Поле для выбора даты начала обработки
-start_date = st.date_input(
-    "Выберите дату начала обработки данных",
-    value=pd.to_datetime("today").date(),  # значение по умолчанию — сегодня
-)
+#start_date = st.date_input(
+#    "Выберите дату начала обработки данных",
+#    value=pd.to_datetime("today").date(),  # значение по умолчанию — сегодня
+#)
 
 # Преобразуем start_date в Timestamp
 start_date = pd.to_datetime(start_date)
@@ -65,10 +65,10 @@ if len(dfs) > 0:
         combined_df["Дата конца"] = combined_df["Дата конца"].dt.strftime("%Y-%m-%d")
 
         # Теперь можно сравнивать с выбранной пользователем датой
-        combined_df["Дата конца"] = pd.to_datetime(combined_df["Дата конца"])
-        filtered_df = combined_df[
-            combined_df["Дата конца"] >= pd.to_datetime(start_date)
-        ]
+       # combined_df["Дата конца"] = pd.to_datetime(combined_df["Дата конца"])
+       # filtered_df = combined_df[
+       #     combined_df["Дата конца"] >= pd.to_datetime(start_date)
+       # ]
 
         ##########------ НАЧАЛО ОБРАБОТКИ ДАННЫХ ------------
         sums_per_date = (
