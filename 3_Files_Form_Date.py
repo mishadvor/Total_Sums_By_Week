@@ -63,13 +63,13 @@ if len(dfs) > 0:
 
         # Форматируем как строка YYYY-MM-DD
         combined_df["Дата конца"] = combined_df["Дата конца"].dt.strftime("%Y-%m-%d")
-
+'''
         # Теперь можно сравнивать с выбранной пользователем датой
         combined_df["Дата конца"] = pd.to_datetime(combined_df["Дата конца"])
         filtered_df = combined_df[
             combined_df["Дата конца"] >= pd.to_datetime(start_date)
         ]
-
+'''
         ##########------ НАЧАЛО ОБРАБОТКИ ДАННЫХ ------------
         sums_per_date = (
             filtered_df.groupby("Дата конца")
